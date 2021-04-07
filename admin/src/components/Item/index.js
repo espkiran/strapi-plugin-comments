@@ -13,7 +13,7 @@ const Item = ({
   content,
   authorName,
   authorUser,
-  created_at,
+  createdAt,
   updated_at,
   related,
   reports,
@@ -44,7 +44,7 @@ const Item = ({
     authorName,
     authorUser,
     related: isArray(related) ? first(related) : related,
-    created_at,
+    createdAt,
     updated_at,
   };
 
@@ -64,7 +64,7 @@ Item.propTypes = {
   content: PropTypes.string.isRequired,
   authorName: PropTypes.string,
   authorUser: PropTypes.object,
-  created_at: PropTypes.string.isRequired,
+  createdAt: PropTypes.string.isRequired,
   updated_at: PropTypes.string,
   related: PropTypes.array,
   reports: PropTypes.array,

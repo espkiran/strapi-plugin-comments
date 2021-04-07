@@ -24,7 +24,7 @@ const reducer = (state, action) => {
             action.items.map((_) => ({
               ..._,
               isNew:
-                moment(_.created_at).diff(
+                moment(_.createdAt).diff(
                   moment(action.recentlyViewed),
                   "seconds"
                 ) > 0,

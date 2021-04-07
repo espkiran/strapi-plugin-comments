@@ -34,7 +34,7 @@ const ItemFooter = ({
   authorName,
   authorUser,
   related,
-  created_at,
+  createdAt,
   isDetailedView,
 }) => {
   const formatAuthor = () => {
@@ -45,7 +45,7 @@ const ItemFooter = ({
   };
 
   const formatDateTime = () => {
-    return moment(created_at).format("DD/MM/YYYY, HH:mm:ss");
+    return moment(createdAt).format("DD/MM/YYYY, HH:mm:ss");
   };
 
   const formatRelationType = () =>
@@ -75,7 +75,7 @@ ItemFooter.propTypes = {
   authorName: PropTypes.string,
   authorUser: PropTypes.object,
   related: PropTypes.object,
-  created_at: PropTypes.string.isRequired,
+  createdAt: PropTypes.string.isRequired,
   isDetailedView: PropTypes.bool,
 };
 

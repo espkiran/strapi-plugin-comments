@@ -19,7 +19,7 @@ module.exports = {
         const paginationEnabled = !isNil(query._start);
         const params = {
             ...query,
-            _sort: paginationEnabled ? query._sort || 'created_at:desc' : undefined
+            _sort: paginationEnabled ? query._sort || 'createdAt:desc' : undefined
         };
         const entities = query._q ? 
             await strapi.query( model.modelName, pluginName).search(params, ['authorUser', 'related', 'reports']) :

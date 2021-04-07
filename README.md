@@ -108,7 +108,7 @@ inside the `attributes` section like in example below:
     "authorName": "Joe Doe",
     "authorEmail": "jdoe@sample.com",
     "authorAvatar": null,
-    "created_at": "2020-07-14T20:13:01.649Z",
+    "createdAt": "2020-07-14T20:13:01.649Z",
     "updated_at": "2020-07-14T20:13:01.670Z"
 }
 ```
@@ -129,14 +129,14 @@ inside the `attributes` section like in example below:
         "confirmed": true,
         "blocked": false,
         "role": 1,
-        "created_at": "2020-07-10T08:38:03.157Z",
+        "createdAt": "2020-07-10T08:38:03.157Z",
         "updated_at": "2020-07-10T08:38:03.170Z"
     },
     "authorId": null,
     "authorName": null,
     "authorEmail": null,
     "authorAvatar": null,
-    "created_at": "2020-07-14T20:13:01.649Z",
+    "createdAt": "2020-07-14T20:13:01.649Z",
     "updated_at": "2020-07-14T20:13:01.670Z"
 }
 

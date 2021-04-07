@@ -35,10 +35,10 @@ import pluginPermissions from "../../permissions";
 
 const CustomRow = (props) => {
   const { row, formatMessage, onClick } = props;
-  const { created_at, reason, content } = row;
+  const { createdAt, reason, content } = row;
   return (
     <tr>
-      <td>{created_at}</td>
+      <td>{createdAt}</td>
       <td>{reason}</td>
       <td>
         <em>{content}</em>
@@ -76,7 +76,7 @@ const AbuseReportsPopUp = ({
   const headers = [
     {
       name: formatMessage({ id: `${pluginId}.popup.reports.item.header.date` }),
-      value: "created_at",
+      value: "createdAt",
     },
     {
       name: formatMessage({
@@ -93,9 +93,9 @@ const AbuseReportsPopUp = ({
     { value: "actions" },
   ];
 
-  const rows = reports.map(({ id, created_at, content, reason }) => ({
+  const rows = reports.map(({ id, createdAt, content, reason }) => ({
     id,
-    created_at: moment(created_at).format("DD/MM/YYYY, HH:mm"),
+    createdAt: moment(createdAt).format("DD/MM/YYYY, HH:mm"),
     reason: resolveReportReason(reason),
     content,
   }));

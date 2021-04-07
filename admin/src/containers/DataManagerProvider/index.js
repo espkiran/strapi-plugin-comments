@@ -101,7 +101,6 @@ const DataManagerProvider = ({ children }) => {
       );
       const { items, total: itemsTotal } = result;
 
-      console.log({items})
       dispatch({
         type: "GET_DATA_SUCCEEDED",
         items,
