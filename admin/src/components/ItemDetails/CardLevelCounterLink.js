@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { colors, sizes, darken } from 'strapi-helper-plugin';
+import { colors, sizes, darken } from "strapi-helper-plugin";
 
 const CardLevelCounterLink = styled.span`
   display: inline-block;
@@ -8,7 +8,7 @@ const CardLevelCounterLink = styled.span`
 
   color: ${colors.blue};
 
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 
   &:hover {
     color: ${darken(colors.blue, 10)};
@@ -17,7 +17,7 @@ const CardLevelCounterLink = styled.span`
   }
 
   svg {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
 `;
 

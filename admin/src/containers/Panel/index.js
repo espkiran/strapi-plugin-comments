@@ -4,9 +4,9 @@
  *
  */
 
-import React, { memo } from 'react';
-import ListView from '../ListView';
-import DetailsView from '../DetailsView';
+import React, { memo } from "react";
+import ListView from "../ListView";
+import DetailsView from "../DetailsView";
 
 const Panel = () => (
   <div className="container-fluid">

@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { Button } from '@buffetjs/styles';
-import { colors } from 'strapi-helper-plugin';
+import { Button } from "@buffetjs/styles";
+import { colors } from "strapi-helper-plugin";
 
 const Wrapper = styled.div`
   display: flex;

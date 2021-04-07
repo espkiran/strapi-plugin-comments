@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { sizes } from 'strapi-helper-plugin';
+import { sizes } from "strapi-helper-plugin";
 
 const CardItemRelation = styled.span`
   display: flex;
@@ -11,7 +11,7 @@ const CardItemRelation = styled.span`
   justify-content: flex-end;
 
   svg {
-    margin-right: ${sizes.margin/2}px;
+    margin-right: ${sizes.margin / 2}px;
   }
 `;
 

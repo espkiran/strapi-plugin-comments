@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { colors } from 'strapi-helper-plugin';
+import { colors } from "strapi-helper-plugin";
 
 const CardHeaderReports = styled.a`
   display: inline-flex;
@@ -9,7 +9,7 @@ const CardHeaderReports = styled.a`
   justify-items: center;
   height: 2.5rem;
   margin-right: 1rem;
-  padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
 
   color: red;
   text-decoration: none;
@@ -18,10 +18,10 @@ const CardHeaderReports = styled.a`
   border-radius: 1.25rem;
   background: transparent;
 
-  transition: .25s ease-in-out all;
+  transition: 0.25s ease-in-out all;
 
   svg {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 
   &:hover {
@@ -31,7 +31,7 @@ const CardHeaderReports = styled.a`
     border-style: solid;
     background: red;
 
-    transform: translateY(-.25rem);
+    transform: translateY(-0.25rem);
 
     cursor: pointer;
   }

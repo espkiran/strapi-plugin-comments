@@ -1,14 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { colors } from 'strapi-helper-plugin';
+import { colors } from "strapi-helper-plugin";
 
 const CardHeaderIndicatorsContainer = styled.span`
   display: flex;
   height: 1.8rem;
 
   position: absolute;
-  top: -.9rem;
-  right: -.9rem;
+  top: -0.9rem;
+  right: -0.9rem;
 
   font-size: 1rem;
   color: ${colors.beige};

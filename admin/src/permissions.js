@@ -4,30 +4,28 @@ const pluginPermissions = {
   // And also if the plugin is accessible. This use case is found when a user types the url of the
   // plugin directly in the browser
   main: [
-    { action: 'plugins::comments.read', subject: null },
-    { action: 'plugins::comments.moderate.block.comment', subject: null },
-    { action: 'plugins::comments.moderate.block.thread', subject: null },
-    { action: 'plugins::comments.moderate.reports', subject: null },
+    { action: "plugins::comments.read", subject: null },
+    { action: "plugins::comments.moderate.block.comment", subject: null },
+    { action: "plugins::comments.moderate.block.thread", subject: null },
+    { action: "plugins::comments.moderate.reports", subject: null },
   ],
-  open: [
-    { action: 'plugins::comments.read', subject: null },
-  ],
+  open: [{ action: "plugins::comments.read", subject: null }],
   moderate: [
-    { action: 'plugins::comments.read', subject: null },
-    { action: 'plugins::comments.moderate.block.comment', subject: null },
-    { action: 'plugins::comments.moderate.block.thread', subject: null },
+    { action: "plugins::comments.read", subject: null },
+    { action: "plugins::comments.moderate.block.comment", subject: null },
+    { action: "plugins::comments.moderate.block.thread", subject: null },
   ],
   moderateComments: [
-    { action: 'plugins::comments.read', subject: null },
-    { action: 'plugins::comments.moderate.block.comment', subject: null },
+    { action: "plugins::comments.read", subject: null },
+    { action: "plugins::comments.moderate.block.comment", subject: null },
   ],
   moderateThreads: [
-    { action: 'plugins::comments.read', subject: null },
-    { action: 'plugins::comments.moderate.block.thread', subject: null },
+    { action: "plugins::comments.read", subject: null },
+    { action: "plugins::comments.moderate.block.thread", subject: null },
   ],
   moderateReports: [
-    { action: 'plugins::comments.read', subject: null },
-    { action: 'plugins::comments.moderate.reports', subject: null },
+    { action: "plugins::comments.read", subject: null },
+    { action: "plugins::comments.moderate.reports", subject: null },
   ],
 };
 

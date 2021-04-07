@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { colors, sizes } from 'strapi-helper-plugin';
+import { colors, sizes } from "strapi-helper-plugin";
 
 const Container = styled.ul`
   display: flex;
-  padding: ${2*sizes.margin}px;
+  padding: ${2 * sizes.margin}px;
   flex-direction: column;
   flex-grow: 1;
   margin: 0;

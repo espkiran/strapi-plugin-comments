@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { colors } from 'strapi-helper-plugin';
+import { colors } from "strapi-helper-plugin";
 
 const CardHeaderIndicator = styled.span`
   display: inline-flex;
@@ -15,11 +15,11 @@ const CardHeaderIndicator = styled.span`
   line-height: 1.8rem;
   text-align: center;
 
-  border-radius: .9rem;
+  border-radius: 0.9rem;
   background: ${colors.grey};
 
   &:first-child {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 
   &:last-child {

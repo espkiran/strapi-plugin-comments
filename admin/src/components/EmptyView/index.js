@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { colors } from 'strapi-helper-plugin';
+import { colors } from "strapi-helper-plugin";
 
 const EmptyView = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const EmptyView = styled.div`
   justify-content: center;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: ${props => props.fixPosition ? '8rem' : 0};
+  padding-bottom: ${(props) => (props.fixPosition ? "8rem" : 0)};
 
   font-size: 2rem;
   font-weight: 600;

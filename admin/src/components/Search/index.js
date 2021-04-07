@@ -4,12 +4,12 @@
  *
  */
 
-import React, { memo } from 'react';
-import { isEmpty, upperFirst } from 'lodash';
-import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
-import { HeaderSearch } from 'strapi-helper-plugin';
-import getTrad from '../../utils/getTrad';
+import React, { memo } from "react";
+import { isEmpty, upperFirst } from "lodash";
+import PropTypes from "prop-types";
+import { FormattedMessage } from "react-intl";
+import { HeaderSearch } from "strapi-helper-plugin";
+import getTrad from "../../utils/getTrad";
 
 const WAIT = 400;
 
@@ -21,12 +21,15 @@ class Search extends React.Component {
   componentDidUpdate(prevProps) {
     const { model, value } = this.props;
 
-    if (prevProps.model !== model || (!isEmpty(prevProps.value) && isEmpty(value))) {
+    if (
+      prevProps.model !== model ||
+      (!isEmpty(prevProps.value) && isEmpty(value))
+    ) {
       this.resetState();
     }
   }
 
-  resetState = () => this.setState({ value: '' });
+  resetState = () => this.setState({ value: "" });
 
   handleChange = ({ target }) => {
     clearTimeout(this.timer);
@@ -35,14 +38,14 @@ class Search extends React.Component {
   };
 
   handleClick = () => {
-    this.setState({ value: '' });
-    this.triggerChange('');
+    this.setState({ value: "" });
+    this.triggerChange("");
   };
 
-  triggerChange = value =>
+  triggerChange = (value) =>
     this.props.changeParams({
       target: {
-        name: '_q',
+        name: "_q",
         value,
       },
     });
@@ -52,8 +55,8 @@ class Search extends React.Component {
     const { value } = this.state;
 
     return (
-      <FormattedMessage id={getTrad('components.Search.placeholder')}>
-        {placeholder => (
+      <FormattedMessage id={getTrad("components.Search.placeholder")}>
+        {(placeholder) => (
           <HeaderSearch
             label={upperFirst(model)}
             onChange={this.handleChange}
@@ -69,8 +72,8 @@ class Search extends React.Component {
 
 Search.defaultProps = {
   changeParams: () => {},
-  model: '',
-  value: '',
+  model: "",
+  value: "",
 };
 
 Search.propTypes = {

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { colors } from 'strapi-helper-plugin';
+import { colors } from "strapi-helper-plugin";
 
 const CardHeaderBlocked = styled.span`
   display: inline-flex;
@@ -9,7 +9,7 @@ const CardHeaderBlocked = styled.span`
   justify-items: center;
   height: 2.5rem;
   margin-right: 1rem;
-  padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
 
   color: ${colors.leftMenu.grey};
 
@@ -17,7 +17,7 @@ const CardHeaderBlocked = styled.span`
   background: ${colors.leftMenu.lightGrey};
 
   svg {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 `;
 

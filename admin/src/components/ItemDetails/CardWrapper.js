@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { colors, sizes } from 'strapi-helper-plugin';
-import CardItem from './CardItem';
+import { colors, sizes } from "strapi-helper-plugin";
+import CardItem from "./CardItem";
 
 const CardWrapper = styled.li`
   padding: 0;
@@ -11,8 +11,8 @@ const CardWrapper = styled.li`
   z-index: 1;
 
   ${CardItem}:before {
-    display: ${ props => props.root ? 'none' : 'block' };
-    content: '';
+    display: ${(props) => (props.root ? "none" : "block")};
+    content: "";
     margin-top: -1px;
 
     height: 2px;
@@ -27,26 +27,27 @@ const CardWrapper = styled.li`
   }
 
   &:after {
-      display: ${ props => props.root ? 'none' : 'block' };
-      content: '';
-      margin-left: -1px;
+    display: ${(props) => (props.root ? "none" : "block")};
+    content: "";
+    margin-left: -1px;
 
-      width: 2px;
+    width: 2px;
 
-      position: absolute;
-      top: -2rem;
-      bottom: 0;
-      left: -2rem;
-      z-index: -1;
+    position: absolute;
+    top: -2rem;
+    bottom: 0;
+    left: -2rem;
+    z-index: -1;
 
-      background-color: ${colors.relations.boxShadow};
+    background-color: ${colors.relations.boxShadow};
+  }
+
+  &:last-child {
+    &:after {
+      bottom: ${(props) =>
+        props.active ? `calc(50% - 1px + 2rem)` : `calc(50% - 1px)`};
     }
-
-    &:last-child {
-      &:after {
-        bottom: ${props => props.active ? `calc(50% - 1px + 2rem)` : `calc(50% - 1px)`};
-      }
-    }
+  }
 `;
 
 export default CardWrapper;

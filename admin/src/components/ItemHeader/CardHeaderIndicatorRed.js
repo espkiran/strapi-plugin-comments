@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { colors } from 'strapi-helper-plugin';
-import CardHeaderIndicator from './CardHeaderIndicator';
+import { colors } from "strapi-helper-plugin";
+import CardHeaderIndicator from "./CardHeaderIndicator";
 
 const CardHeaderIndicatorRed = styled(CardHeaderIndicator)`
   color: ${colors.beige};

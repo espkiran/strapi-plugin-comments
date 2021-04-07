@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Button, FilterIcon as Filter } from 'strapi-helper-plugin';
-import RemoveIcon from '../../assets/images/icon-cross-blue.svg';
+import styled from "styled-components";
+import { Button, FilterIcon as Filter } from "strapi-helper-plugin";
+import RemoveIcon from "../../assets/images/icon-cross-blue.svg";
 
 const Wrapper = styled.div`
   padding-top: 1px;
@@ -101,7 +101,7 @@ const Separator = styled.span`
   margin-right: 10px;
   line-height: 30px;
   &:after {
-    content: '';
+    content: "";
     height: 15px;
     border-left: 1px solid #007eff;
     opacity: 0.1;
@@ -115,7 +115,7 @@ const Remove = styled.span`
 
   &:after {
     display: inline-block;
-    content: '';
+    content: "";
     width: 8px;
     height: 8px;
     margin: auto;
